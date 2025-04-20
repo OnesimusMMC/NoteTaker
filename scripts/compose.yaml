@@ -5,4 +5,4 @@ services:
     volumes:
       - ~/.memos/:/var/opt/memos
     ports:
-      - 5230:5230
+      - 5330:5330
