@@ -10,8 +10,8 @@ interface Props {
 const BrandBanner = (props: Props) => {
   const { collapsed } = props;
   const workspaceGeneralSetting = workspaceStore.state.generalSetting;
-  const title = workspaceGeneralSetting.customProfile?.title || "Memos";
-  const avatarUrl = workspaceGeneralSetting.customProfile?.logoUrl || "/full-logo.webp";
+  const title = workspaceGeneralSetting.customProfile?.title || "Notetaker";
+  const avatarUrl = workspaceGeneralSetting.customProfile?.logoUrl || "/mmc.jpg";
 
   return (
     <div className={cn("relative w-full h-auto shrink-0", props.className)}>

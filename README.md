@@ -42,6 +42,30 @@ Learn more about [other installation methods](https://www.usememos.com/docs/inst
 > [!WARNING]
 > Memos is still under active development, so you may encounter bugs or breaking changes as we improve.
 
+## Instructions to Start
+
+1. **Build the Docker Image First**
+
+   Run this command from the project root to build the Docker image:
+
+   ```bash
+   docker build -t notetaker-app -f scripts/Dockerfile .
+   ```
+
+2. **Start the Application with Docker Compose**
+
+   Then start the app using Docker Compose:
+
+   ```bash
+   docker compose -f scripts/compose.yaml up
+   ```
+
+---
+
+**Note:**  
+- Always build the image first before running Docker Compose.
+- If you want to run in detached mode, add `-d` to the compose command.
+
 ## Contribution
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. We greatly appreciate any contributions you make. Thank you for being a part of our community! 🥰
